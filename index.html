@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram</title>
+    <link rel="shortcut icon" href="./assets/instagram.png">
+    <link rel="stylesheet" href="index.css">
+    
+</head>
+<body>
+    <div class="global-container">
+        <div class="wrapper-site">
+            <!-- NAVBAR -->
+            <div class="nav-bar">
+                <div class="nav-bar-wrapper">
+                    <!-- Icon instagram et appareil photo -->
+                    <div style="list-style: none;display: flex;" class="app-photo-logo-insta">
+                        <li class="button">
+                            <a data-switcher data-button="2"><img src="assets/apareil.ico" class="logo-appareil" alt=""></a> 
+                        </li>
+                        <li class="button is-active">
+                            <a data-switcher data-button="1"><img src="assets/logo-instagram1.png" class="logo-instagram" alt=""></a> 
+                        </li>
+                        
+                    </div>
+                    <!-- Icon search -->
+                    <input type="search" class="search-box" placeholder="Rechercher" >
+                    <!-- Buttons of navbar -->
+                    <ul style="display: flex; list-style: none;" class="buttons">
+                        <li id="logo" class="button is-active">
+                            <a data-switcher data-button="1"> <img src="assets/house.png" class="logo" alt=""></a> 
+                        </li>
+
+                        <li class="button">
+                            <a data-switcher data-button="2"> <img style="transform: rotate(50.000004deg);"  src="assets/direction.png" class="logo" alt=""></a>
+                        </li>
+
+                        <li id="logo" class="button">
+                            <a data-switcher data-button="3"> <img src="assets/ajouter.png" class="logo" alt=""></a>
+                        </li>
+
+                        <li id="logo" class="button">
+                        <a data-switcher data-button="4"> <img src="assets/direct.png" class="logo" alt=""></a>  
+                        </li>
+
+                        <li id="logo" class="button">
+                            <a data-switcher data-button="5"> <img src="assets/coeur.png" class="logo" alt=""></a> 
+                        </li>
+
+                        <li id="logo" class="button">
+                            <a data-switcher data-button="6"> <img src="assets/photo.jpeg" class="profil" alt=""></a>  
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- PAGES -->
+            <div class="pages">
+                <!-- Page 1 -->
+                <div id="page1"  data-page="1" class="page is-active">
+                    <div class="main">
+                        <div class="wrapper-of-main">
+                            <div class="left-bloc">
+                                <!-- Bloc Stories -->
+                                <div class="stories-container">
+                                    <div class="container-story">
+                                        <div class="story">
+                                            <img class="photo-of-profil" src="assets/photo.jpeg" alt="">
+                                        </div>
+                                        <p class="user-name">iambrand</p>
+                                    </div>
+            
+                                    <div class="container-story">
+                                        <div class="story">
+                                            <img class="photo-of-profil" src="assets/instagram.png" alt="">
+                                        </div>
+                                        <p class="user-name">instagram</p>
+                                    </div>
+            
+                                    <div class="container-story">
+                                        <div class="story">
+                                            <img class="photo-of-profil" src="assets/photo1.jpeg" alt="">
+                                        </div>
+                                        <p class="user-name">starbrand</p>
+                                    </div>
+            
+                                    <div class="container-story">
+                                        <div class="story">
+                                            <img class="photo-of-profil" src="assets/fille.png" alt="">
+                                        </div>
+                                        <p class="user-name">ineslameuf</p>
+                                    </div>
+            
+                                    <div class="container-story">
+                                        <div class="story">
+                                            <img class="photo-of-profil" src="assets/photo3.jpeg" alt="">
+                                        </div>
+                                        <p class="user-name">fashionbrad</p>
+                                    </div>
+            
+                                    <div class="container-story">
+                                        <div class="story">
+                                            <img class="photo-of-profil" src="assets/photo.jpeg" alt="">
+                                        </div>
+                                        <p class="user-name">username</p>
+                                    </div>
+            
+                                    <div class="container-story">
+                                        <div class="story">
+                                            <img class="photo-of-profil" src="assets/fille.png" alt="">
+                                        </div>
+                                        <p class="user-name">filledeux</p>
+                                    </div>
+                                </div>
+                                <!-- Bloc posts -->
+                                <div class="posts">
+                                    <!-- Header of post -->
+                                    <div class="header-post">
+                                        <div class="user">
+                                            <div style="display: flex;" class="photo">
+                                                <img style="width: 40px;height: 40px;" class="photo-of-profil" src="assets/fille.png" alt="">
+                                                <div style="margin-left: 5px;">
+                                                    <p style="font-size: 12px;font-weight: bold;" class="user-name"> ineslame.</p> 
+                                                    <p style="font-size: 11px;color: gray;margin-left: 1px;" class="user-name"> Londre, UK</p> 
+                                                </div>
+                                            </div>
+                                            <div class="points"><strong ><h1>...</h1></strong></div>
+                                        </div>
+
+                                    </div>
+                                    <img  class="photo-post" src="assets/fille.png" alt="">
+                                    <div style="display: flex;justify-content: space-between;" class="likes">
+                                        <div style="width: 20%;display: flex;margin-left: 15px;" class="like-comment-shar">
+                                            <img  class="coeur" id="photo-post" src="./assets/coeur-red.png"/>
+                                            <img style="margin-left:7px ;margin-right: 7px;" class="comment" id="photo-post" src="./assets/comment.png"/>
+                                            <img style="transform: rotate(50.000004deg);"  class="direct" id="photo-post" src="./assets/direction.png"/>
+                                        </div>
+                                        <div style="padding-right: 15px;;display: flex;justify-content: flex-end;margin-right: 1px;"  class="save">
+                                            <img style="display: block;" class="save" id="save" src="./assets/save.png"/>
+                                        </div>
+                                </div>
+    
+                                <div style="margin-left: 15px;" class="info-post">
+                                    <div style="font-size: 13px;display: flex;align-items: center;margin-top: 10px;" class="comments">
+                                        <img style="width: 20px;height: 20px;border-radius: 100%;" class="icon-photo" id="icon-photo" src="./assets/photo.jpeg"/>
+                                        <p>Aimé par <strong>is_me_chlo</strong> et <strong>24 247 autre.. </strong></p>
+                                    </div>
+                                    <p style="font-size: 13px;" class="com1"><strong>culturfits </strong> Zendaya  wearing Roberto Cavalress, F/W 2000</p>
+                                    <samp style="font-size: 13px;;" class="com">
+                                            <p style="color: rgb(161, 159, 159);font-size: 12px;margin-top: 10px;">Afficher les 50 commentaire</p>
+                                            <p style="color: rgb(161, 159, 159);font-size: 12px;margin-top: 10px;">IL Y A 1 JOUR</p>
+                                    </samp>
+    
+                                </div>
+    
+                                <div class="add-comment">
+                                    <img src="assets/smile.png" class="smile" alt="">
+                                    <input type="text" class="box-comment" name="box-comment" placeholder="Ajoutez un commentaire" id="">
+                                    <button class="btn-comment">Publier</button>
+                                </div>
+                                </div>
+
+                                <!-- Bloc posts -->
+                                <div class="posts">
+                                    <!-- Header of post -->
+                                    <div class="header-post">
+                                        <div class="user">
+                                            <div style="display: flex;" class="photo">
+                                                <img style="width: 40px;height: 40px;" class="photo-of-profil" src="assets/photo.jpeg" alt="">
+                                                <div style="margin-left: 5px;">
+                                                    <p style="font-size: 12px;font-weight: bold;" class="user-name"> iambrand</p> 
+                                                    <p style="font-size: 11px;color: gray;margin-left: 5px;" class="user-name"> Tours, France</p>  
+                                                </div>
+                                            </div>
+                                            <div class="points"><strong ><h1>...</h1></strong></div>
+                                        </div>
+
+                                    </div>
+                                    <img  class="photo-post" src="assets/photo3.jpeg" alt="">
+                                    <div style="display: flex;justify-content: space-between;" class="likes">
+                                        <div style="width: 20%;display: flex;margin-left: 15px;" class="like-comment-shar">
+                                            <img  class="coeur" id="photo-post" src="./assets/coeur-red.png"/>
+                                            <img style="margin-left:7px ;margin-right: 7px;" class="comment" id="photo-post" src="./assets/comment.png"/>
+                                            <img style="transform: rotate(50.000004deg);"  class="direct" id="photo-post" src="./assets/direction.png"/>
+                                        </div>
+                                        <div style="padding-right: 15px;;display: flex;justify-content: flex-end;margin-right: 1px;"  class="save">
+                                            <img style="display: block;" class="save" id="save" src="./assets/save.png"/>
+                                        </div>
+                                </div>
+    
+                                <div style="margin-left: 15px;" class="info-post">
+                                    <div style="font-size: 13px;display: flex;align-items: center;margin-top: 10px;" class="comments">
+                                        <img style="width: 20px;height: 20px;border-radius: 100%;" class="icon-photo" id="icon-photo" src="./assets/photo.jpeg"/>
+                                        <p>Aimé par <strong>is_me_chlo</strong> et <strong>24 247 autre.. </strong></p>
+                                    </div>
+                                    <p style="font-size: 13px;" class="com1"><strong>culturfits </strong> Zendaya  wearing Roberto Cavalress, F/W 2000</p>
+                                    <samp style="font-size: 13px;;" class="com">
+                                            <p style="color: rgb(161, 159, 159);font-size: 12px;margin-top: 10px;">Afficher les 50 commentaire</p>
+                                            <p style="color: rgb(161, 159, 159);font-size: 12px;margin-top: 10px;">IL Y A 1 JOUR</p>
+                                    </samp>
+    
+                                </div>
+    
+                                <div class="add-comment">
+                                    <img src="assets/smile.png" class="smile" alt="">
+                                    <input type="text" class="box-comment" name="box-comment" placeholder="Ajoutez un commentaire" id="">
+                                    <button class="btn-comment">Publier</button>
+                                </div>
+                                </div>
+
+                                <!-- Bloc posts -->
+                                <div class="posts">
+                                    <!-- Header of post -->
+                                    <div class="header-post">
+                                        <div class="user">
+                                            <div style="display: flex;" class="photo">
+                                                <img style="width: 40px;height: 40px;" class="photo-of-profil" src="assets/photo1.jpeg" alt="">
+                                                <div style="margin-left: 5px;">
+                                                    <p style="font-size: 12px;font-weight: bold;" class="user-name"> iambrand</p> 
+                                                    <p style="font-size: 11px;color: gray;margin-left: 5px;" class="user-name"> Paris, France</p> 
+                                                </div>
+                                            </div>
+                                            <div class="points"><strong ><h1>...</h1></strong></div>
+                                        </div>
+
+                                    </div>
+                                    <img  class="photo-post" src="assets/photo1.jpeg" alt="">
+                                    <div style="display: flex;justify-content: space-between;" class="likes">
+                                        <div style="width: 20%;display: flex;margin-left: 15px;" class="like-comment-shar">
+                                            <img  class="coeur" id="photo-post" src="./assets/coeur-red.png"/>
+                                            <img style="margin-left:7px ;margin-right: 7px;" class="comment" id="photo-post" src="./assets/comment.png"/>
+                                            <img style="transform: rotate(50.000004deg);"  class="direct" id="photo-post" src="./assets/direction.png"/>
+                                        </div>
+                                        <div style="padding-right: 15px;;display: flex;justify-content: flex-end;margin-right: 1px;"  class="save">
+                                            <img style="display: block;" class="save" id="save" src="./assets/save.png"/>
+                                        </div>
+                                </div>
+    
+                                <div style="margin-left: 15px;" class="info-post">
+                                    <div style="font-size: 13px;display: flex;align-items: center;margin-top: 10px;" class="comments">
+                                        <img style="width: 20px;height: 20px;border-radius: 100%;" class="icon-photo" id="icon-photo" src="./assets/photo.jpeg"/>
+                                        <p>Aimé par <strong>is_me_chlo</strong> et <strong>24 247 autre.. </strong></p>
+                                    </div>
+                                    <p style="font-size: 13px;" class="com1"><strong>culturfits </strong> Zendaya  wearing Roberto Cavalress, F/W 2000</p>
+                                    <samp style="font-size: 13px;;" class="com">
+                                            <p style="color: rgb(161, 159, 159);font-size: 12px;margin-top: 10px;">Afficher les 50 commentaire</p>
+                                            <p style="color: rgb(161, 159, 159);font-size: 12px;margin-top: 10px;">IL Y A 1 JOUR</p>
+                                    </samp>
+    
+                                </div>
+    
+                                <div class="add-comment">
+                                    <img src="assets/smile.png" class="smile" alt="">
+                                    <input type="text" class="box-comment" name="box-comment" placeholder="Ajoutez un commentaire" id="">
+                                    <button class="btn-comment">Publier</button>
+                                </div>
+                                </div>
+                            </div>
+                            
+                            <div class="right-bloc">
+                                <div class="contact">
+                                    <div style="display: flex; width: 230px;align-items: center;" class="photo">
+                                        <img style="width: 60px;height: 60px;" class="photo-of-profil" src="assets/photo.jpeg" alt="">
+                                        <samp style="margin-left: 10px;">
+                                            <h4 style="font-size: 15px; ">iambrand.b</h4>
+                                            <h6 style="color: grey; font-size:16px;">B R A N D</h6>
+                                        </samp>
+                                    </div>
+                                    <button class="btn-r" > Basculer </button>
+                                </div>
+            
+                                <div style="width: 100%;height: 30px;"></div>
+            
+                                <div class="contact">
+                                    <div style="display: flex;justify-content: space-between;width: 100%;" class="my-photo ">
+                                        <h6 style="font-size: 14px;color: grey;width: 262px;display: flex;justify-content: flex-start;background-color: white;;margin-left: 19px; ">Suggestions pour vous</h6>
+                                        <h6 style="width: 40%;display: flex;justify-content: flex-end;">Voir tout</h6>
+                                </div>
+                                </div>
+            
+                                <div style="width: 100%;height: 10px;"></div>
+            
+                                <div class="contact">
+                                    <div style="display: flex; width: 230px;align-items: center;" class="photo">
+                                        <img style="width: 25px;height: 25px;border: none;" class="photo-of-profil" src="assets/fille.png" alt="">
+                                        <samp style="margin-left: 10px;">
+                                            <h4 style="font-size: 12px; ">ineslame</h4>
+                                            <h6 style="color: grey; font-size:12px;">Abonné(e)karl et 3 au...</h6>
+                                        </samp>
+                                    </div>
+                                    <button class="btn-r" style="font-size: 10px;" > S'abonner </button>
+                                </div>
+            
+                                <div style="width: 100%;height: 10px;"></div>
+            
+                                <div class="contact">
+                                    <div style="display: flex; width: 230px;align-items: center;" class="photo">
+                                        <img style="width: 25px;height: 25px;" class="photo-of-profil" src="assets/photo3.jpeg" alt="">
+                                        <samp style="margin-left: 10px;">
+                                            <h4 style="font-size: 12px; ">iambrand.b</h4>
+                                            <h6 style="color: grey; font-size:12px;">Suivi(e) par marck_ot</h6>
+                                        </samp>
+                                    </div>
+                                    <button class="btn-r" style="font-size: 10px;" > S'abonner </button>
+                                </div>
+            
+                                <div style="width: 100%;height: 10px;"></div>
+            
+                                <div class="contact">
+                                    <div style="display: flex; width: 230px;align-items: center;" class="photo">
+                                        <img style="width: 25px;height: 25px;" class="photo-of-profil" src="assets/instagram.png" alt="">
+                                        <samp style="margin-left: 10px;">
+                                            <h4 style="font-size: 12px; ">instagram</h4>
+                                            <h6 style="color: grey; font-size:12px;">Suivi(e) par efrei_paris</h6>
+                                        </samp>
+                                    </div>
+                                    <button class="btn-r" style="font-size: 10px;" > S'abonner </button>
+                                </div>
+            
+                                <div style="width: 100%;height: 10px;"></div>
+            
+                                <div class="contact">
+                                    <div style="display: flex; width: 230px;align-items: center;" class="photo">
+                                        <img style="width: 25px;height: 25px;" class="photo-of-profil" src="assets/photo1.jpeg" alt="">
+                                        <samp style="margin-left: 10px;">
+                                            <h4 style="font-size: 12px; ">t.brand</h4>
+                                            <h6 style="color: grey; font-size:12px;">Suivi(e) par kvin + 2...</h6>
+                                        </samp>
+                                    </div>
+                                    <button class="btn-r" style="font-size: 10px;" > S'abonner </button>
+                                </div>
+            
+                                <div style="width: 100%;height: 10px;"></div>
+            
+                                <div class="contact">
+                                    <div style="display: flex; width: 230px;align-items: center;" class="photo">
+                                        <img style="width: 25px;height: 25px;" class="photo-of-profil" src="assets/fille.png" alt="">
+                                        <samp style="margin-left: 10px;">
+                                            <h4 style="font-size: 12px; ">marine</h4>
+                                            <h6 style="color: grey; font-size:12px;">Suivi(e) par moi_meme</h6>
+                                        </samp>
+                                    </div>
+                                    <button class="btn-r" style="font-size: 10px;" > S'abonner </button>
+                                </div>
+            
+                                <div style="width: 100%;height: 1%;"></div>
+            
+                                <div style="color: grey; font-size: 18px; display: block;margin-left: 19px;" class="my-photo ">
+                                    <h6 style="margin-top: 5px; color: rgb(206, 204, 204);">A propos Aid ePresse  API Emplois</h6>
+                                    <div style="width: 100%;height: 4%;"></div>
+                                    <h6 style="margin-top: 5px; color: rgb(206, 204, 204);">ConfidentialitéConditionsLieux</h6>
+                                    <div style="width: 100%;height: 4%;"></div>
+                                    <h6 style="margin-top: 5px; color: rgb(206, 204, 204);">Comptes principaux Hashtags</h6>
+                                
+                                    <div style="width: 100%;height: 10px;"></div>
+                                    <h6 style="margin-top: 7px; color: rgb(206, 204, 204);">LANGUE © 2022 INSTAGRAM PAR META</h6>  
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Page 2 -->
+                <div style="background-color: white;" id="page2"  data-page="2" class="page">
+                    <div class="main">
+                        <div class="wrapper-of-main">
+                            <div style="width: 100%;height: 100%;display: flex;justify-content: space-between;align-content: center;" >
+                       
+                                <div style="width: 100%;height: 100%;background-color: white;display: flex;flex-direction: column;justify-content:flex-start;align-items: center;" class="milieu">
+                                   <div><img style="width: 100%;height: 100%;" src="./assets/mes1.png" alt="photo"></div>
+                                   <div><img style="width: 100%;height: 100%;" src="./assets/mes2.png" alt="photo"></div>
+                                   <div><img style="width: 100%;height: 100%;" src="./assets/mes3.png" alt="photo"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Page 3 -->
+                <div id="page3"  data-page="3" class="page">
+                    <div class="main">
+                        <div class="wrapper-of-main">
+                            <div style="background-color:white;width: 100%;height: 350px;" >
+                                <div class="container-header">
+                                    <div style="width: 100%;height: 100%;background-color: white;display: flex;justify-content: center;align-items: center;" class="milieu">
+                                       <div><img style="width: 100%;height: 100%;" src="./assets/ajout-photo.png" alt="photo"></div> 
+                                    </div>
+                               </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Page 4 -->
+                <div id="page4"  data-page="4" class="page">
+                    <div class="main">
+                        <div class="wrapper-of-main">
+                            <div class="container-header">
+                                <div style="width: 100%;height: 100%;background-color: white;" class="milieu">
+                                   <div><img style="width: 100%;height: 100%;" src="./assets/photo-mes-search1c.png" alt="photo"></div>
+                                   <div><img style="width: 100%;height: 100%;" src="./assets/photo-mes-search2.png" alt="photo"></div> 
+                                   <div><img style="width: 100%;height: 100%;" src="./assets/photo-mes-search3.png" alt="photo"></div> 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Page 5 -->
+                <div id="page5"  data-page="5" class="page">
+                    <div class="main">
+                        <div class="wrapper-of-main">
+                            <div class="container-header">
+                                <div style="width: 100%;height: 100%;background-color: white;" class="milieu">
+                                   <div><img style="width: 100%;height: 100%;" src="./assets/coeur-post1.png" alt="photo"></div>
+                                   <div><img style="width: 100%;height: 100%;" src="./assets/coeur-post2.png" alt="photo"></div> 
+                                   <div><img style="width: 100%;height: 100%;" src="./assets/coeur-post3.png" alt="photo"></div> 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Page 6 -->
+                <div id="page6"  data-page="6" class="page">
+                    <div class="main">
+                        <div class="wrapper-of-main">
+                            <div style="width: 100%;height: 700px;display: flex;justify-content: space-between;align-content: center;" >
+                       
+                                <div style="width: 100%;height: 100%;background-color: white;display: flex;flex-direction: column;justify-content:flex-start;align-items: center;align-content: stretch;" class="milieu">
+                                   <div><img style="width: 100%;height: 100%;" src="./assets/my-profil1.png" alt="photo"></div>
+                                   <div><img style="width: 100%;height: 100%;" src="./assets/my-profil2.png" alt="photo"></div> 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- FOOTER -->
+            <div class="footer">
+                <div class="wrapper-footer">
+                    <ul style="display: flex; list-style: none;" class="buttons">
+                        <li class="button is-active">
+                            <a data-switcher data-button="1"> <img src="assets/house.png" class="logo" alt=""></a> 
+                        </li>
+
+                        <li class="button">
+                            <a data-switcher data-button="2"> <img src="assets/ajouter.png" class="logo" alt=""></a>
+                        </li>
+
+                        <li class="button">
+                        <a data-switcher data-button="3"> <img src="assets/direct.png" class="logo" alt=""></a>  
+                        </li>
+
+                        <li class="button">
+                            <a data-switcher data-button="4"> <img src="assets/coeur.png" class="logo" alt=""></a> 
+                        </li>
+
+                        <li class="button">
+                            <a data-switcher data-button="5"> <img src="assets/photo.jpeg" class="profil" alt=""></a>  
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    <script src="index.js" ></script>
+</body>
+</html>
